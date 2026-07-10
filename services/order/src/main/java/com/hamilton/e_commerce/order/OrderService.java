@@ -2,6 +2,7 @@ package com.hamilton.e_commerce.order;
 
 import com.hamilton.e_commerce.customer.CustomerClient;
 import com.hamilton.e_commerce.exception.BusinessException;
+import com.hamilton.e_commerce.kafka.OrderConfirmation;
 import com.hamilton.e_commerce.kafka.OrderProducer;
 import com.hamilton.e_commerce.orderline.OrderLineRequest;
 import com.hamilton.e_commerce.orderline.OrderLineService;
