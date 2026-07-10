@@ -6,6 +6,8 @@ import com.hamilton.e_commerce.kafka.OrderConfirmation;
 import com.hamilton.e_commerce.kafka.OrderProducer;
 import com.hamilton.e_commerce.orderline.OrderLineRequest;
 import com.hamilton.e_commerce.orderline.OrderLineService;
+import com.hamilton.e_commerce.payment.PaymentClient;
+import com.hamilton.e_commerce.payment.PaymentRequest;
 import com.hamilton.e_commerce.product.ProductClient;
 import com.hamilton.e_commerce.product.PurchaseRequest;
 import jakarta.persistence.EntityNotFoundException;
