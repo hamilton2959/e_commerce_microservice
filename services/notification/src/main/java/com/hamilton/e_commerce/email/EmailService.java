@@ -27,6 +27,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class EmailService {
 
     private final JavaMailSender mailSender;
+    //private JavaMailSender mailSender;
     private final SpringTemplateEngine templateEngine;
 
     @Async
@@ -39,7 +40,7 @@ public class EmailService {
 
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED, UTF_8.name());
-        messageHelper.setFrom("contact@aliboucoding.com");
+        messageHelper.setFrom("migwambohamilton42@gmail.com.com");
 
         final String templateName = PAYMENT_CONFIRMATION.getTemplate();
 
@@ -76,7 +77,7 @@ public class EmailService {
 
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED, UTF_8.name());
-        messageHelper.setFrom("contact@aliboucoding.com");
+        messageHelper.setFrom("migwambohamilton42@gmail.com");
 
         final String templateName = ORDER_CONFIRMATION.getTemplate();
 
